@@ -1,5 +1,9 @@
 # Quantitative Economics, University of Warsaw, Fall 2024 
-Marcin Lewandowski & Piotr Żoch
+## Contact info
+Marcin Lewandowski: 
+Piotr Żoch: _p.zoch@uw.edu.pl_
+
+Office hours: TBA
 
 ## Log and annoucements 
 
