@@ -3,7 +3,7 @@
 
 ## Log and annoucements 
 
-+ Nothin yet... 
++ Nothing yet... 
 
 ## How to start using Julia
 Follow [these instructions](https://code.visualstudio.com/docs/languages/julia). Please use Julia 1.XX.X.
