@@ -8,7 +8,12 @@ Office hours: TBA
 
 ## Log and annoucements 
 
-+ Nothing yet... 
++ Nothing yet...
+
+## Outline 
+A .pdf version of the syllabus is available here: XXX
+
+
 
 ## How to start using Julia
 Follow [these instructions](https://code.visualstudio.com/docs/languages/julia). Please use Julia 1.XX.X.
