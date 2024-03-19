@@ -1,5 +1,5 @@
 # Quantitative Economics, University of Warsaw, Fall 2024 
-
+Marcin Lewandowski & Piotr Żoch
 
 ## Log and annoucements 
 
