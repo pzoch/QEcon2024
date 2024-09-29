@@ -11,7 +11,7 @@ Office hours: by appointment
 + Nothing yet...
 
 ## Outline 
-A .pdf version of the syllabus is available here: XXX
+A .pdf version of the syllabus is available [here](https://github.com/pzoch/QEcon2024/blob/main/syllabus_quant_website.pdf).
 
 
 
