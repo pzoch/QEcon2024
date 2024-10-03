@@ -21,9 +21,3 @@ Once you completed all these steps press <kbd>Alt</kbd>+<kbd>j</kbd> <kbd>Alt</k
 
 You can also see [here](https://julia.quantecon.org/getting_started_julia/getting_started.html). You can skip 1.3.1 if you do not want to use Jupyter notebooks. 
 
-
-### Environments
-[This note](https://jkrumbiegel.com/pages/2022-08-26-pkg-introduction/) might be helpful.
-
-## Git tutorial 
-Please see [this tutorial](https://swcarpentry.github.io/git-novice/).   
