@@ -6,7 +6,11 @@ Piotr Żoch: _p.zoch@uw.edu.pl_
 
 Office hours: by appointment
 
-## Log and annoucements 
+## Log and announcements 
+
+> [!IMPORTANT]
+> Before next class: 
++ Ensure that you can log to the University computers. If you have any problems contact IT support as soon as possible.  
 
 + 4/10: Introduction and course logistics. 
 
@@ -21,3 +25,5 @@ Once you completed all these steps press <kbd>Alt</kbd>+<kbd>j</kbd> <kbd>Alt</k
 
 You can also see [here](https://julia.quantecon.org/getting_started_julia/getting_started.html). You can skip 1.3.1 if you do not want to use Jupyter notebooks. 
 
+## Git 
+You can download Git [here](https://git-scm.com/downloads/win).
