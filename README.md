@@ -10,7 +10,7 @@ Office hours: by appointment
 
 > [!IMPORTANT]
 > Before next class: 
-+ Ensure that you can log to the University computers. If you have any problems contact IT support as soon as possible.  
+> Ensure that you can log to the University computers. If you have any problems contact IT support as soon as possible.  
 
 + 4/10: Introduction and course logistics. 
 
