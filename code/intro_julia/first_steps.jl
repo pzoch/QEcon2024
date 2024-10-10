@@ -57,10 +57,27 @@ else
     println("unexpected condition")
 end
 
+if x > 0
+    sqrt(x)
+else
+    sqrt(-x)
+end
+
+
 x % y==0 ? println("no reminder") : println("some reminder")
 x > 0 ? sqrt(x) : sqrt(-x)
 
+if x < 0 
+    println("negative x: ", x)
+elseif  x  > 100
+    println("Large, positive x: ", x)
+else
+    println("Positive, but not large x: ", x)
+end
+
 # 5. Boolean operators: 
+typeof(!(x==4))
+typeof(true)
 !(x==4)
 x > 0 && x < 10
 0<x<10
@@ -69,7 +86,7 @@ x < 0 || x > 10
 #############################        CONCEPT CHECK:         ############################# 
 # a. Make two variables, var_a and var_b. Put any numeric types in these variables.
 # b. Print out "It is easy!" if var_a is greater than 1 and var_b is NOT less than 2. Do it using nested if conditions
-# c. Now use only one if condition, use boolean operators.
+# c. Now write only one if condition, use boolean operators.
 ####################################################################################### 
 
 
@@ -112,8 +129,8 @@ plot!(times_two,-10:0.1:10)
 
 
 #############################        QUICK TASK:         ############################# 
-# Consider a following polynomial function g(x,θ₁,θ₂,θ₃,θ₄) = θ₁*x^3 + θ₂*x^2 + θ₃*x + θ₄
-# a. Write it into Julia such that θ₁,θ₂,θ₃ are keyword arguments. Test for arbitrary values of all parameters. 
+# Consider a following polynomial function g(x,α,β,γ,δ) = α*x^3 + β*x^2 + γ*x + δ
+# a. Write it into Julia such that α,β,γ,δ are keyword arguments. Test for arbitrary values of all parameters. 
 # b. Now write a function h(x)  that accepts only a value x, but evaluates g at the coefficients 4, -3, 2, and 10.
 # c. Plot function h at the interval (-100,100), use 0.1 step size
 ####################################################################################### 
@@ -126,13 +143,13 @@ function solve_model(x)
 end
 
 
-c  = solve_model(0.1)
-c.a
+model_solved  = solve_model(0.01)
+model_solved.a
 (; a, b, c) = solve_model(0.1)
 a
 
 #Often you will see an exclamation mark (!) at the end of the function name
-x = [5, 1, 3, 2]
+x = [5, 1, 3, 2,1000]
 sort(x)
 sort!(x)
 #a Julia convention recommends that developers add ! at the end of functions they create if those functions modify their arguments.
@@ -256,10 +273,10 @@ end
 z
 #we can get the same result with a comprehension 
 [y[i] * x[i] for i in eachindex(y, x)]
+[0 for i in eachindex(y, x)]
+
 #using map 
 map(*, x, y)  #The passed function (*, in this case) is applied iteratively elementwise to those collections until one of them gets exhausted
-
-
 
 #Broadcasting Functions:
 times_two(x) = 2 * x
