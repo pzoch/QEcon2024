@@ -8,11 +8,12 @@ Office hours: by appointment
 
 ## Log and announcements 
 
-> [!IMPORTANT]
-> Before next class: 
-> Ensure that you can log into the University computers. If you have any problems contact IT support as soon as possible.  
-
 + 4/10: Introduction and course logistics. 
++ 9/10: Covered the basics of Git in Visual Studio. Here are some useful materials to recap and expand on what we discussed:
+   - [7-minute beginner tutorial](https://www.youtube.com/watch?v=i_23KUAEtUM ).
+   - [A guide to managing merge conflicts](https://www.youtube.com/watch?v=HosPml1qkrg&list=PLj6YeMhvp2S7abEHqkUPRkCSt4N2wpTwD&index=7).
+   - If you encounter the issue of configuring your user.name and user.email in Git, watch this [video](https://www.youtube.com/watch?v=RT-1Zywrse8). 
+
 
 ## Outline 
 A .pdf version of the syllabus is available [here](https://github.com/pzoch/QEcon2024/blob/main/syllabus_quant_website.pdf).
