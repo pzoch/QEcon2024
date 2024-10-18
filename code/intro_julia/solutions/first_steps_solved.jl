@@ -19,7 +19,7 @@ if var_a>1 && !(var_b<2)
 end
 ####################################################################################### 
 
-#############################        QUICK TASK:         ############################# 
+#############################        CONCEPT CHECK:         ############################# 
 # Consider the following polynomial function g(x, α, β, γ, δ) = α*x^3 + β*x^2 + γ*x + δ
 # a. Write it in Julia such that α, β, γ, δ are keyword arguments. Test for arbitrary values of all parameters. 
 g(x; α, β, γ, δ) = α*x^3 + β*x^2 + γ*x + δ
@@ -32,7 +32,7 @@ plot(h,-100:0.1:100)
 
 ####################################################################################### 
 
-#############################        QUICK TASK:         ############################# 
+#############################        CONCEPT CHECK:         ############################# 
 # Write a function that takes a number (n) as an argument and returns the mean of the values 1, 2, 3, ..., n.
 # 1. Define a function my_mean(n)
 # 2. Define a variable my_sum=0
@@ -51,7 +51,7 @@ my_mean(2)
 ####################################################################################### 
 
 
-#############################        QUICK TASK:         ############################# 
+#############################        CONCEPT CHECK:         ############################# 
 #Let's do some multiplication table
 #Write a function that does the following:
 #   Accepts n, which is the maximum value of a times table.
