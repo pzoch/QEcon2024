@@ -9,7 +9,7 @@ Office hours: by appointment
 ## Log and announcements 
 
 > [!IMPORTANT]
-> **Problem Set 12** is available. It is due on **31.10.2024, 11:59 PM**. 
+> **Problem Set 1** is available. It is due on **31.10.2024, 11:59 PM**. 
 
 + 18/10: Programming: Vectors, Matrices and Broadcasting.
 + 16/10: Setting up repositories (see videos sent via email) and programming: Loops and Functions.
