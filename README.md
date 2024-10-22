@@ -8,14 +8,19 @@ Office hours: by appointment
 
 ## Log and announcements 
 
-+ 4/10: Introduction and course logistics. 
+> [!IMPORTANT]
+> **Problem Set 1** is available. It is due on **31.10.2024, 11:59 PM**. 
+
++ 18/10: Programming: Vectors, Matrices and Broadcasting.
++ 16/10: Setting up repositories (see videos sent via email) and programming: Loops and Functions.
++ 11/10: Introduction to the Packages Environment and basic programming: Conditional Statements.
 + 9/10: Covered the basics of Git in Visual Studio. Here are some useful materials to recap and expand on what we discussed:
    - [7-minute beginner tutorial](https://www.youtube.com/watch?v=i_23KUAEtUM ).
    - [A guide to managing merge conflicts](https://www.youtube.com/watch?v=HosPml1qkrg&list=PLj6YeMhvp2S7abEHqkUPRkCSt4N2wpTwD&index=7).
    - If you encounter the issue of configuring your user.name and user.email in Git, watch this [video](https://www.youtube.com/watch?v=RT-1Zywrse8). 
-+ 11/10: Introduction to the Packages Environment and basic programming: Conditional Statements.
-+ 16/10: Setting up repositories (see videos sent via email) and programming: Loops and Functions.
-+ 18/10: Programming: Vectors, Matrices and Broadcasting.
++ 4/10: Introduction and course logistics. 
+
+
 
 ## Outline 
 A .pdf version of the syllabus is available [here](https://github.com/pzoch/QEcon2024/blob/main/syllabus_quant_website.pdf).
