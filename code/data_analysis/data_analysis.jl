@@ -26,8 +26,8 @@ title!(plot_2, "Scatter plot of data_2")
 display(plot_2)
 
 #Combining two plots into one
-plot(plot_1,plot_2,layout=(1,2),size=(600, 400))
-
+both_plots = plot(plot_1,plot_2,layout=(1,2),size=(600, 400))
+savefig(both_plots, "code//data_analysis//both_plots.pdf")
 
 #data_1 is a matrix, if we want to calculate the mean we need to specify the dimension!
 mean(data_1, dims=1)
@@ -74,7 +74,8 @@ xaxis!(plot_2, "x")
 yaxis!(plot_2, "y")
 title!(plot_2, "Scatter plot of data_2")
 display(plot_2)
-plot(plot_1,plot_2,layout=(1,2))
+both_plots = plot(plot_1,plot_2,layout=(1,2))
+savefig(both_plots, "code//data_analysis//both_plots.pdf")
 
 #############################        QUICK TASK 1:         ############################# 
 # a. Import dataset_3 as data_3.
