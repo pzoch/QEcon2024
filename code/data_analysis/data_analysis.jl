@@ -76,8 +76,45 @@ title!(plot_2, "Scatter plot of data_2")
 display(plot_2)
 plot(plot_1,plot_2,layout=(1,2))
 
-#############################        QUICK TASK:         ############################# 
+#############################        QUICK TASK 1:         ############################# 
 # a. Import dataset_3 as data_3.
 # b. Calculate the correlation between x and y in the data.
 # c. Plot the data as a red scatter plot, name it properly, and label it with the correlation coefficient.
-# d. Combine plot_1, plot_2, and your new plot into one plot (use the option layout=(1,3)).
+# d. Combine plot_1, plot_2, and your plot_3 plot into one plot (use the option layout=(1,3)).
+######################################################################################### 
+###YOUR CODE:
+
+
+
+
+
+
+#############################        QUICK TASK 2:         ############################# 
+#Following the instruction on slides write your own function fit_regression(x,y)
+#which accepts two vectors x,y and returns a vector of regression coefficients.
+
+# HINTS: 
+# 1. Do it in steps: define numerator, denominator, and then use those to get the coefficient β1.
+# 2. Remember that you can use mean(), sum() and  broadcasting(you don't need any loops)!! to get the final result. 
+# 3. Define:
+x = data_1[:,1]
+y = data_1[:,2]
+# 4. Define a function fit_regression(x,y)
+
+
+
+# 5. This call should return the coefficients!
+β0,β1 = fit_regression(x,y)
+
+#Check:
+#See if your coefficient β1 is equal to:
+cov(x,y)/var(x)
+######################################################################################### 
+
+
+scatter(x, y; label="Our data", color=:blue, markersize = 5)
+#This will work only if you have defined β0 and β1 (thus fit_regression function!!)
+plot!(x,β0.+β1.*x; label="Fitted line: y=$(round(β0,digits=2))+$(round(β1,digits=2))x",linewidth=4)
+xaxis!(plot_1, "x")
+yaxis!(plot_1, "y")
+title!(plot_1, "Scatter plot of data_1 with fitted line")
