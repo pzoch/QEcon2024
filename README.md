@@ -11,6 +11,8 @@ Office hours: by appointment
 > [!IMPORTANT]
 > **Problem Set 1** is available. It is due on **31.10.2024, 11:59 PM**. 
 
+
++ 25/10: Floating point numbers: single and double precision, machine epsilon.
 + 23/10: Programming: Calculating the mean, standard deviation, and correlations. Plotting. Writing a custom regression function.
 + 18/10: Programming: Vectors, Matrices and Broadcasting.
 + 16/10: Setting up repositories (see videos sent via email) and programming: Loops and Functions.
