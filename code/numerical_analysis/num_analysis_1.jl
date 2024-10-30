@@ -2,7 +2,7 @@
 
 
 ### PRELIMINARIES 
-x_int  =  2
+x_int  =  1
 x_float  = 1.0
 
 # use typeof to check the type of a variable
@@ -43,8 +43,8 @@ bitstring(big_numer + 1.0)
 # define type of variable 
 x_fl32::Float32 = 1.0
 typeof(x_fl32)
-
-
+x_myint::Int64 = 1.0
+typeof(x_myint)
 # machine epsilon 
 eps(Float64)
 
@@ -78,8 +78,6 @@ nextfloat(1000000000.0)
 nextfloat(floatmax())
 nextfloat(-Inf)
 
-
-
 # a mystery...
 a::Float16 = 0.1
 b::Float16 = 0.2
@@ -94,11 +92,11 @@ result_2 = c + b + a
 
 ### QUADRATIC EQUATION EXAMPLE
 ϵ = 1e-6   
-a,b,c = 1/3, (-2-ϵ)/3, (1+ϵ)/3  
+ax,bx,cx = 1/3, (-2-ϵ)/3, (1+ϵ)/3  
 
-d = sqrt(b^2-4a*c)
-r1 = (-b-d)/(2a)  
-r2 = (-b+d)/(2a)
+dx = sqrt(bx^2-4ax*cx)
+r1 = (-bx-dx)/(2ax)  
+r2 = (-bx+dx)/(2ax)
 (r1,r2)
 
 # what is the true r2? 
