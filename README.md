@@ -8,9 +8,8 @@ Office hours: by appointment
 
 ## Log and announcements 
 
-> [!IMPORTANT]
-> **Problem Set 1** is available. It is due on **31.10.2024, 11:59 PM**. 
 
++ 6/11: Matrix norms, matrix condition numbers, iterative methods to solve a linear system of equations. 
 + 30/10: Condition number, flops counting, LU decomposition to solve a linear system of equations.
 + 25/10: Floating point numbers: single and double precision, machine epsilon.
 + 23/10: Programming: Calculating the mean, standard deviation, and correlations. Plotting. Writing a custom regression function.
