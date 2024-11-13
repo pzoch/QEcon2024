@@ -8,17 +8,17 @@ using PrettyTables, Plots, LaTeXStrings, LinearAlgebra, NLsolve, Roots
 
 f(x) = x.^2 .- 3 .+ x .* sin.( 1 ./ x .+ x .^ 2 )
 
-plot(f, -3, 3, label="f(x) =  x^2 - 3 + x * sin(1/x + x^2 )", legend=:topleft)
-plot!(zero, -3, 3, label="y=0")
+plot(f, -30, 30, label="f(x) =  x^2 - 3 + x * sin(1/x + x^2 )", legend=:topleft)
+plot!(zero, -30, 30, label="y=0")
 
 
-guess = 2.5
+guess = 20.5
 nlsolve(f,[guess],ftol=1e-14,show_trace=true)
 nlsolve(f,[guess],method=:newton,ftol=1e-14,show_trace=true)
 
 # example using Roots 
 
-find_zero(f, (1,3), Bisection(), verbose = true)
+find_zero(f, (0.1,3), Bisection(), verbose = true, atol = 1e-14)
 find_zero(f, (1.4,1.5), Order1(), verbose = true)
 find_zero(f, 1.4, verbose = true)
 
@@ -43,11 +43,13 @@ bisection(f,1,3,1e-14)
 
 f(x) = x*exp(x) - 2;
 dfdx(x) = exp(x)*(x+1);
+
+
 r = nlsolve(x -> f(x[1]),[1.]).zero
 
 plot(f, -1, 1, label="f(x) = x*exp(x) - 2", legend=:topleft)
 
-x = [BigFloat(1);zeros(7)]
+x = [BigFloat(10);zeros(7)]
 for k = 1:7
     x[k+1] = x[k] - f(x[k]) / dfdx(x[k])
 end

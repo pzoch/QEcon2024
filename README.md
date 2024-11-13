@@ -8,7 +8,7 @@ Office hours: by appointment
 
 ## Log and announcements 
 
-
++ 8/11: Solving nonlinear equations: one dimension. Bisection, Newton's method, secant method. 
 + 6/11: Matrix norms, matrix condition numbers, iterative methods to solve a linear system of equations. 
 + 30/10: Condition number, flops counting, LU decomposition to solve a linear system of equations.
 + 25/10: Floating point numbers: single and double precision, machine epsilon.
