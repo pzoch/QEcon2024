@@ -5,7 +5,7 @@ using PrettyTables, Plots, LaTeXStrings, LinearAlgebra, NLsolve, Optim, Roots, C
 rosenbrock(x) = (1.0 .- x[1]).^2 .+ 100.0 .* (x[1] .- x[2].^2).^2
 grid = -1.5:0.11:1.5;
 
-plot(grid,grid,(x,y)->rosenbrock([x, y]),st=:surface,camera=(50,50))
+plot(grid,grid,(x,y)->rosenbrock([x, y]),st=:surface,camera=(50,20))
 
 plot(grid,grid,(x,y)->rosenbrock([x, y]),st=:contour,color=:turbo, levels = 20,clabels=true, cbar=false, lw=1)
 
