@@ -7,8 +7,10 @@ Piotr Żoch: _p.zoch@uw.edu.pl_
 Office hours: by appointment
 
 ## Log and announcements 
+> [!IMPORTANT]
+> **Problem Set 2** is available. It is due on **05.12.2024, 11:59 PM**. 
 
-
++ 20/11: Optimization examples. Introduction to interpolation. 
 + 15/11: Overview of optimization methods. 
 + 13/11: Multidimensional nonlinear equations. 
 + 8/11: Solving nonlinear equations: one dimension. Bisection, Newton's method, secant method. 
