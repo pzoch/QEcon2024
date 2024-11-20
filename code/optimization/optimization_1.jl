@@ -50,12 +50,12 @@ function newton(f,dfdx,dfdx2,x0; ε=10e-6, δ=10e-6, maxcounter = 100, verbose =
 
     guesses = push!(guesses,x_new)
     return (argmin = x_new, val = f(x_new), derivative  = dfdx(x_new), points = guesses, iteration = counter)
-    end
+end
 
 
 dfdx2_univariate(x)  = 4.0
 
-newton(f_univariate,dfdx_univariate,dfdx2_univariate,0.0)
+newton(f_univariate,dfdx_univariate,dfdx2_univariate,100.0)
 
 
 # what if we do not have derivatives?

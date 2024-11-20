@@ -8,6 +8,8 @@ Office hours: by appointment
 
 ## Log and announcements 
 
+
++ 15/11: Overview of optimization methods. 
 + 13/11: Multidimensional nonlinear equations. 
 + 8/11: Solving nonlinear equations: one dimension. Bisection, Newton's method, secant method. 
 + 6/11: Matrix norms, matrix condition numbers, iterative methods to solve a linear system of equations. 
