@@ -2,7 +2,7 @@
 using Plots,NLopt,Statistics,Distributions,ForwardDiff,DelimitedFiles
 
 ## Provide underlying p
-p = 0.4
+p = 0.2
 DGP = Bernoulli(p)
 ## One draw from the Bernoulli distribution:
 rand(DGP,1)
@@ -20,7 +20,7 @@ function nlopt_objective_fn(params::Vector, grad::Vector,y) ## y will be the dat
         grad[1] =  sum(y)/params[1] - sum(1 .- y)/(1 - params[1])
     end
     obj = log(params[1])*sum(y) + log(1 -params[1])*sum((1 .- y))
-    println("Params, Function, Gradient: ",round(params[1],digits=5),", ",round(obj,digits=5),", ",round(grad[1],digits=5)) 
+    println("Params, Function, Gradient: ",round(params[1],digits=7),", ",round(obj,digits=7),", ",round(grad[1],digits=7)) 
     return obj
 end
 
@@ -36,16 +36,16 @@ opt.upper_bounds = [ 1.0]   # upper bound for params
 ## NLopt will terminate when the first one of the specified termination conditions is met
 ## Tolerance on the on the function values. The algorithm stops if from one iteration to the next:
 #opt.ftol_rel    = 0.0001  # |Δf|/|f|  < tol_rel 
-opt.ftol_abs     = 1.0e-15   # |Δf|      < tol_abs
+opt.ftol_abs     = 0.0000001   # |Δf|      < tol_abs
 
 ### Tolerance on the parameters. The algorithm stops if from one iteration to the next:
 #opt.xtol_rel    = 0.0001  # |Δx|/|x|  < tol_rel 
-#opt.xtol_abs    = 0.0001  # |Δx|      < tol_abs
+opt.xtol_abs    = 0.0001  # |Δx|      < tol_abs
 
 #Note: tol_rel is independent of any absolute scale factors or units
 
 ## Or you can specify the maximum number of evaluations:
-opt.maxeval = 2000
+opt.maxeval = 200
 
 ## Supply opt. with the function to be maximized
 ## NOTE: supply only a function of (params, grad), that is why I use a wrapper function!
@@ -96,7 +96,7 @@ plot!(input->F(input;probability_of=0),-10,10,lw=3,label="The probability of 0")
 y_vec   = [1,1,1,0,1,0]
 x_vec   = [-10,-1,2,-3,40,50]
 
-college  = plot(x_vec,y_vec,seriestype=:scatter,legend=false,xlabel="y",ylabel="Binary outcome")
+plot(x_vec,y_vec,seriestype=:scatter,legend=false,xlabel="y",ylabel="Binary outcome")
 correlation = cor(x_vec,y_vec)
 
 
