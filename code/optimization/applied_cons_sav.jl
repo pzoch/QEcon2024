@@ -134,9 +134,9 @@ end
 ## Define a household modelled:
 hh    = create_HH(y=[1,4,3,0.5,0.5],a_0=1)
 
-## Define the optimizer used:
-####### TASK 2: Define a correct dimensionality: #######
+####### TASK 2: Define the correct dimensionality: #######
 opt = NLopt.Opt(:LN_COBYLA, 0) 
+
 ## Define the objective function:
 NLopt.max_objective!(opt, (a,grad)->nlopt_objective_fn(a, grad,hh))
 ## Define the lower bounds for the parameters:
@@ -156,9 +156,6 @@ c_3     = 0 #Replace the 0!
 c_4     = 0 #Replace the 0!
 c_5     = 0 #Replace the 0!
 plot([c_1,c_2,c_3,c_4,c_5],xlabel="Period",ylabel="Consumption",label="",lw=3,yaxis=[0,3])
-
-
-####### TASK 3: Define and plot the path of optimal consumption #######
 
 ####################The end of concept check####################
 
