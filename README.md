@@ -10,6 +10,9 @@ Office hours: by appointment
 > [!IMPORTANT]
 > **Problem Set 2** is available. It is due on **05.12.2024, 11:59 PM**. 
 
++ 29/11: Optimization: examples II.
++ 27/11: Optimization: examples I.
++ 22/11: Chebyshev polynomials. B-splines. 
 + 20/11: Optimization examples. Introduction to interpolation. 
 + 15/11: Overview of optimization methods. 
 + 13/11: Multidimensional nonlinear equations. 
