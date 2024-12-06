@@ -8,7 +8,7 @@ Office hours: by appointment
 
 ## Log and announcements 
 > [!IMPORTANT]
-> **Problem Set 2** is available. It is due on **05.12.2024, 11:59 PM**. 
+> **Problem Set 2** is available. It is due on **08.12.2024, 11:59 PM**. 
 
 + 4/12: Optimization: example II (Consumption-saving problem)
 + 29/11: Optimization: example I (Maximum Likelihood continued)
