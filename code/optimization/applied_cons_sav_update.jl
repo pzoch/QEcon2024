@@ -39,9 +39,9 @@ hh_01   = create_HH(σ=0.1)
 hh_1    = create_HH(σ=1)
 hh_2    = create_HH(σ=2)
 
-hh_01.u(1)
-hh_1.u(1)
-hh_2.u(1)
+hh_01.u(1.0)
+hh_1.u(1.0)
+hh_2.u(1.0)
 
 ## Plot the utility as a function of consumption for different σ  
 plot(hh_01.u,0.3,10,xlabel="Consumption", label="σ=0.1",ylabel="u(c)",lw=3)
@@ -237,7 +237,7 @@ C.c4/C.c3
 ##Second example: β=0.9,R=1.05; βR<1
 hh = create_HH(y=[1,1,1,1,1],β=0.9,R=1.05)
 C,A = solvehh(hh;initial_a_guess=[-0.1,-0.1,-0.1,-0.1])
-plot_paths(C,A)
+plot_paths(C,A,hh,arange=[-1,1])
 
 C.c2/C.c1
 C.c3/C.c2
