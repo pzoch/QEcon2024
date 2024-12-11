@@ -14,8 +14,8 @@ function create_job_search_model(;
     β=0.96, # discount factor
     c=10.0 # unemployment compensation
     )
-    w_vals = collect(LinRange(w_min, w_max, n+1))
-    ϕ = pdf(BetaBinomial(n, a, b))
+    w_vals = collect(LinRange(w_min, w_max, n))
+    ϕ = pdf(BetaBinomial(n-1, a, b))
     return (; n, w_vals, ϕ, β, c)
 end
 
