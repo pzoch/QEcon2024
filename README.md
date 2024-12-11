@@ -7,9 +7,8 @@ Piotr Żoch: _p.zoch@uw.edu.pl_
 Office hours: by appointment
 
 ## Log and announcements 
-> [!IMPORTANT]
-> **Problem Set 2** is available. It is due on **08.12.2024, 11:59 PM**. 
-
++ 11/12: McCall's job search model continued. Contraction mapping theorem.
++ 6/12: Introduction to dynamic programming. McCall's job search model.
 + 4/12: Optimization: example II (Consumption-saving problem)
 + 29/11: Optimization: example I (Maximum Likelihood continued)
 + 27/11: Optimization: example I (Maximum Likelihood)
