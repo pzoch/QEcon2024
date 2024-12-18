@@ -112,7 +112,7 @@ function vfi(model;maxiter=1000,tol=1e-8) # value function iteration
     return v, σ, iter, error, v_history
 end
 
-my_model = create_job_search_model()
+my_model = create_job_search_model( β = 0.9999)
 v, σ, iter, error, v_history = vfi(my_model)
 plot_v = plot(my_model.w_vals,v, label="v(w)",linewidth=4,xlabel = "w",ylabel = "v")
 plot_σ = plot(my_model.w_vals,σ, label="policy: 1 = accept wage",xlabel = "w", linestyle=:dash,linewidth=2)
