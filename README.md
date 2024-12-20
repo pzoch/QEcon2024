@@ -7,6 +7,8 @@ Piotr Żoch: _p.zoch@uw.edu.pl_
 Office hours: by appointment
 
 ## Log and announcements 
++ 18/12: Examples of dynamic programming: shortest path, tree cutting, resource extraction, Neoclassical Growth Model 
++ 13/12: Value function iteration. 
 + 11/12: McCall's job search model continued. Contraction mapping theorem.
 + 6/12: Introduction to dynamic programming. McCall's job search model.
 + 4/12: Optimization: example II (Consumption-saving problem)

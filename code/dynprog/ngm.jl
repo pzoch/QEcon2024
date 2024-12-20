@@ -13,7 +13,7 @@ using  Plots, Parameters
     u = σ == 1 ? c -> log(c) : c -> c ^ (1-σ) / (1-σ)   # utility function
     k_star = ((β^(-1) - 1 + δ) / α) ^(1/(α-1)) # steady state capital
 
-    k_min  = 0.75 * k_star # minimum capital
+    k_min = 0.75 * k_star # minimum capital
     k_max = 1.25 * k_star # maximum capital
     
     n = 100 # number of grid points

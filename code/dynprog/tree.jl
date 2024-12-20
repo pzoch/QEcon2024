@@ -63,6 +63,16 @@ end
 gif(anim, "v_history.gif", fps = 5)
 
 
+
+
+
+
+
+
+
+
+
+
 ### TREE CUTTING WITH CUTTING COST 
 
 function T(v,model) # Bellman operator
@@ -92,15 +102,15 @@ plot(plot_v,plot_σ,layout=(1,2),legend=:topleft)
 
 function T(v,model) # Bellman operator
     @unpack n, s_grid, c, r, S, f, h , p  = model
-    return [max(f(s) - c,   1.0/(1.0+r) *  ((1 - p) * v[min(s_index+1,n)] + p * 0.5 * f(s))) for (s_index,s) in enumerate(s_grid)]
+    return [max(f(s) - c,   1.0/(1.0+r) *  ((1 - p) * v[min(s_index+1,n)] + p * 0.5 * (f(s)-c))) for (s_index,s) in enumerate(s_grid)]
 end
 
 function get_policy(v,model) # this will be used after finding the fixed point of T
     @unpack n, s_grid, c, r, S, f, h, p = model
-    return σ = [ (f(s) - c)  >=   1.0/(1.0+r) *  ((1 - p) * v[min(s_index+1,n)] + p * 0.5 * f(s)) for (s_index,s) in enumerate(s_grid)]
+    return σ = [ (f(s) - c)  >=   1.0/(1.0+r) *  ((1 - p) * v[min(s_index+1,n)] + p * 0.5 * (f(s)-c)) for (s_index,s) in enumerate(s_grid)]
 end
 
-my_tree_death = TreeCuttingProblem(α0 = 0.1, r=0.05, c = 0.0, p = 0.01)
+my_tree_death = TreeCuttingProblem(α0 = 0.1, r=0.05, c = 0.15, p = 0.5)
 
 v_death, σ_death, iter_death, err_death, v_history_death = vfi(my_tree_death)
 plot_v = plot(my_tree_death.s_grid,v_death, label="v(s)",linewidth=4,xlabel = "size",ylabel = "v");
@@ -112,6 +122,8 @@ plot(plot_v,plot_σ,layout=(1,2),legend=:topleft)
 
 function T(v,model) # Bellman operator
     # note - now it takes a matrix as input
+    # the first column is the value of being healthy
+    # the second column is the value of being sick
     @unpack n, s_grid, c, r, S, f, h , p, q  = model
 
     v_H = [max(f(s) - c,   1.0/(1.0+r) *  ((1 - p) * v[min(s_index+1,n),1] + p * v[s_index,2])) for (s_index,s) in enumerate(s_grid)]
