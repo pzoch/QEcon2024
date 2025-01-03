@@ -159,7 +159,7 @@ function vfi(model;maxiter=1000,tol=1e-8) # value function iteration
     return v, σ, iter, err, v_history
 end
 
-my_tree_sick = TreeCuttingProblem(α0 = 0.5, r=0.01, c = 0.0, p = 0.25, q = 0.15)
+my_tree_sick = TreeCuttingProblem(α0 = 0.1, α1 = 2.0, r=0.01, c = 0.0, p = 0.9, q = 0.1)
 
 v_sick, σ_sick, iter_sick, err_sick, v_history_sick = vfi(my_tree_sick)
 
