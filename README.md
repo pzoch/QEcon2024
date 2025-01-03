@@ -6,10 +6,11 @@ Piotr Żoch: _p.zoch@uw.edu.pl_
 
 Office hours: by appointment
 
-> [!IMPORTANT]
-> **Problem Set 3** is available. It is due on **22.01.2025, 11:59 PM**. 
+
 
 ## Log and announcements 
+> [!IMPORTANT]
+> **Problem Set 3** is available. It is due on **22.01.2025, 11:59 PM**. 
 + 20/12: Introduction to Markov Chains.
 + 18/12: Examples of dynamic programming: shortest path, tree cutting, resource extraction, Neoclassical Growth Model.
 + 13/12: Value function iteration. 
